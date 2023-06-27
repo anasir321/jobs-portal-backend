@@ -4,6 +4,7 @@ import {
   searchUser,
   updateUser,
   viewUsers,
+  deleteUser
 } from "../controllers/userController";
 import express from "express";
 
@@ -20,5 +21,8 @@ router.get("/search", searchUser);
 
 // update a user
 router.patch("/updateUser/:name",updateUser);
+
+// delete a user
+router.delete("/deleteUser", deleteUser);
 
 export default router;
